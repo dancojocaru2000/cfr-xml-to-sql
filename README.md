@@ -22,6 +22,18 @@ python convert.py
 
 Scriptul este scris pentru Python 3.
 
+Deși rularea scriptului durează în jur de 3 secunde (setul de date 2020-2021), se afișează o bară de progres dacă este instalat `tqdm`:
+
+```bash
+# Unix
+pip3 install tqdm
+```
+
+```powershell
+# Windows
+pip install tqdm
+```
+
 ## Schemă bază de date
 
 Schema este validă pentru versiunea 2.
