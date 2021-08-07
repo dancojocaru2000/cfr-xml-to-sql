@@ -1,0 +1,10 @@
+{
+	"$schema": "https://cfr-xml-to-sql.extras.dcdevelop.xyz/mapping.schema.json",
+	"mappings": [
+		{
+			"filename": "example.xml",
+			"legalName": "S.C. Example Company S.R.L",
+			"commonName": "Example Company"
+		}
+	]
+}
