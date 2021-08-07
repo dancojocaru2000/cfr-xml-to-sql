@@ -27,7 +27,7 @@ def create_tables(con):
 	if 'Trase' not in tables:
 		cursor.execute('create table Trase (NumarTren int, Id int, Tip, CodStatieInitiala int, CodStatieFinala int)')
 	if 'ElementeTrasa' not in tables:
-		cursor.execute('create table ElementeTrasa (NumarTren int, IdTrasa int, Secventa int, Ajustari, CodStaDest, CodStaOrigine, DenStaDestinatie, DenStaOrigine, Km int, Lungime int, OraP int, OraS int, Rci, Rco, Restrictie, StationareSecunde int, TipOprire, Tonaj, VitezaLivret int)')
+		cursor.execute('create table ElementeTrasa (NumarTren int, IdTrasa int, Secventa int, Ajustari, CodStaDest int, CodStaOrigine int, DenStaDestinatie, DenStaOrigine, Km int, Lungime int, OraP int, OraS int, Rci, Rco, Restrictie, StationareSecunde int, TipOprire, Tonaj, VitezaLivret int)')
 	if 'Statii' not in tables:
 		cursor.execute('create table Statii (CodStatie integer primary key, Denumire text)')
 	con.commit()

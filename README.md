@@ -84,8 +84,8 @@ NumarTren         | int         | fk Trenuri->Number + Trase->NumarTren
 IdTrasa           | int         | fk Trase->Id
 Secventa          | int         | Ordinea secvenței în trasă (1, 2, ...)
 Ajustari          |             |
-CodStaDest        |             | fk Statii->CodStatie
-CodStaOrigine     |             | fk Statii->CodStatie
+CodStaDest        | int         | fk Statii->CodStatie
+CodStaOrigine     | int         | fk Statii->CodStatie
 DenStaDestinatie  |             |
 DenStaOrigine     |             |
 Km                | int         | Distanța în **metri** între stații *(ex: 3022 -> 3022 m / 3 km)*
