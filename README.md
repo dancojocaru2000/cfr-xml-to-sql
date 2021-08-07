@@ -7,7 +7,7 @@ Un script Python pentru convertirea
 ## Cum se folosește
 
 - se plasează fișierele `.xml` în folderul `datafiles`
-- (opțional) se completează fișierul `datafiles/mapping.json` cu numele companiilor
+- se completează fișierul `datafiles/mapping.json` cu numele companiilor
 - se rulează `convert.py`:
 
 ```bash
