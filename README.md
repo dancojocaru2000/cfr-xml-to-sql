@@ -58,12 +58,12 @@ NumeComun | text        | Numele după care este cunoscută compania *(în gener
 
 Coloană       | Tip de date | Descriere
 --------------|-------------|----------
-Number        | int pk      |
+Number        | int pk      | Numar, dar truncat până la întâlnirea primului caracter nenumeric
 IdCompanie    | int         | fk Companii->Id
 CategorieTren |             | R/IR/etc.
 KmCum         | int         | Lungimea totală a traseului în **metri**
 Lungime       | int         | Lungimea trenului
-Numar         |             |
+Numar         |             | Numărul trenului, dar posibil să conțină și simboluri _(ex: Number: 74, CategorieTren: IR, Numar: **74-1**)_
 Operator      |             | ? - Uneori conține un număr unic pentru un anumit operator, alteori este gol
 Proprietar    |             |
 Putere        |             |
