@@ -4,9 +4,11 @@ import xml.etree.ElementTree as ET
 from itertools import takewhile
 try:
 	from tqdm import tqdm
+	TQDM_IMPORTED = True
 except ImportError:
 	def tqdm(iter, *args, **kargs):
 		return iter
+	TQDM_IMPORTED = False
 
 def get_database_connection():
 	import sqlite3
@@ -158,8 +160,9 @@ def main():
 		
 		trains = find_trains(con)
 
-		print(f'Adding {company_common_name or f}...')
-		for el_tren in tqdm(el_trenuri.findall("./Tren")):
+		if not TQDM_IMPORTED:
+			print(f'Adding {company_common_name or f}...')
+		for el_tren in tqdm(el_trenuri.findall("./Tren"), desc=company_common_name or f):
 			train_number_str = el_tren.attrib['Numar']
 			train_number = train_number_stoi(train_number_str)
 
