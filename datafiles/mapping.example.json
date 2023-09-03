@@ -1,5 +1,5 @@
 {
-	"$schema": "https://cfr-xml-to-sql.extras.dcdevelop.xyz/mapping.schema.json",
+	"$schema": "https://raw.githubusercontent.com/dancojocaru2000/cfr-xml-to-sql/master/datafiles/mapping.schema.json",
 	"mappings": [
 		{
 			"filename": "example.xml",

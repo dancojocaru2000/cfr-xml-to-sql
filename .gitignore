@@ -4,6 +4,7 @@ __pycache__
 # Data
 datafiles/*
 !datafiles/mapping.example.json
+!datafiles/mapping.schema.json
 
 # Output
 trains.sqlite

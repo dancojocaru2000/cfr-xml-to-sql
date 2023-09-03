@@ -1,0 +1,33 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://raw.githubusercontent.com/dancojocaru2000/cfr-xml-to-sql/master/datafiles/mapping.schema.json",
+	"title": "Files to companies mapping",
+	"description": "Maps file names to the names of companies",
+	"type": "object",
+	"properties": {
+		"mappings": {
+			"description": "Array of mappings",
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"filename": {
+						"description": "Name of the .xml file",
+						"type": "string"
+					},
+					"legalName": {
+						"description": "Official name of the company (something like S.C. Company S.R.L.)",
+						"type": "string"
+					},
+					"commonName": {
+						"description": "Name that people commonly use for the company (typically same as legal name without prefix and suffix)",
+						"type": "string"
+					}
+				},
+				"required": ["filename"]
+			},
+			"uniqueItems": true
+		}
+	},
+	"required": ["mappings"]
+}
